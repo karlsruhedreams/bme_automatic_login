@@ -1,0 +1,12 @@
+{
+    "addons": {
+        "@bme_automatic_login": {
+            "updates": [
+                {
+                    "version": "1.0",
+                    "update_link": "https://raw.githubusercontent.com/karlsruhedreams/bme_automatic_login/main/update/versions/bme_automatic_login-1_0.xpi"
+                }
+            ]
+        }
+    }
+}
