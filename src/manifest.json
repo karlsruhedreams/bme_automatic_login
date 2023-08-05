@@ -55,6 +55,14 @@
             "js": [
                 "initiate_login_bme_iit.js"
             ]
+        },
+        {
+            "matches": [
+                "https://login.microsoftonline.com/login.srf"
+            ],
+            "js": [
+                "microsoft_login.js"
+            ]
         }
     ]
 }
