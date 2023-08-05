@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "BME automatic login",
     "short_name": "BME automatic login",
-    "version": "1.0",
+    "version": "1.1",
 
     "author": "Karlsruhe dreams",
     "description": "Automatically initiates the login process on numerous websites of the Budapest University of Technology and Economics (BME).",
@@ -54,6 +54,14 @@
             ],
             "js": [
                 "initiate_login_bme_iit.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://login.microsoftonline.com/login.srf"
+            ],
+            "js": [
+                "microsoft_login.js"
             ]
         }
     ]
