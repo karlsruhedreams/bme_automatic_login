@@ -42,6 +42,7 @@
                 "https://www.tmit.bme.hu/*",
                 "https://hvt.bme.hu/*",
                 "https://vet.bme.hu/*",
+                "https://diplomaterv.vik.bme.hu/*",
                 "https://schpincer.sch.bme.hu/*"
             ],
             "js": [

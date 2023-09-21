@@ -21,6 +21,7 @@ function initiateLogin() {
         "#shib_login_url a", // MIT bejelentkezés második oldalán
         "#block-system-main a img", // IIT bejelentkezés második oldalán
         "#btnStudentLogin", // AUT bejelentkezés második oldalán
+        "#btnLogin", // diplomaterv portál második oldalán
         "a[title='Log in']", // VIK Moodle
         "a[title='EduID Login']", // GTK Moodle
     ];
