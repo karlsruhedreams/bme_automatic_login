@@ -5,9 +5,19 @@
  */
 
 /// If logging in with the BME Microsoft account, accept to stay signed in
-function staySignedIn() {
-    const title = document.querySelector("div.text-title").innerHTML;
-    if (title != "Stay signed in?") {
+function staySignedIn(tries = 3) {
+    if (tries == 0) {
+        console.error("BME automatic login: could not find the Microsoft sign-in page");
+        return;
+    }
+    
+    const title = document.querySelector("div.text-title");
+    if (!title?.innerHTML) { // the page might not have loaded yet; try again later
+        setTimeout(() => staySignedIn(tries - 1), 500);
+        return;
+    }
+    
+    if (title.innerHTML != "Stay signed in?") {
         console.error("BME automatic login: Microsoft sign-in page does not match the expected title");
         return;
     }
