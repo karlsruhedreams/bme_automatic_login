@@ -1,0 +1,1 @@
+document.querySelector("#login-container-2 a")?.click();
